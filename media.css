@@ -117,32 +117,41 @@
   .header__right-side .language__select::after {
     font-size: 1rem;
     right: -20px;
-    top: -12px;
+    top: -10px;
   }
   
   /* ---------------------- Features */  
+ 
+  .features {
+    height: auto;
+  }
+  
   .features__container {
     position: relative;
   }
   
   .features__images {
     grid-template-rows: repeat(3, 1fr);
+    row-gap: 100px;
     grid-template-columns: 1fr;
-    height: 80%;
+    height: 100%; 
+    padding-bottom: 70px; 
   }
   
   .features__items {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    height: 80%;
-    top: 10%;
+    height: 90%;
+    top: 80px;
     align-items: center;
   }
   
   .features__item {
     align-self: end;
   }
+
+
   /* ---------------------- Software */
   
   .software, .money {
@@ -152,17 +161,28 @@
   .software__container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    /* height: auto; */
-    position: relative;
   }
   
   .software__video-container {
     position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
+
+  .software__video {
+    width: 100%;
+    height: 100%;
+  }
+
   
   .software__play-button {
-    left: 130px;  
+    position: absolute;
+    left: -33px;  
     right: 0;
+    height: auto;
+    margin: 0 auto;
   }
   .title {
     text-align: center;
@@ -179,6 +199,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
+
   
   .technology__numbers {
     height: 90%;
@@ -198,10 +219,16 @@
   .money__text {
     display: grid;
     grid-template-rows: 2fr 1fr 1fr;
+    row-gap: 5px;
   }
   
   .money__subtitle {
     grid-row: 2/2;
+  }
+
+  .money__subtitle, .money__logos {
+    justify-self: center;
+    text-align: center;
   }
   
   /* -------------------------- Contact*/ 
@@ -301,4 +328,73 @@
     margin: 10px;
   }
   
+}
+
+@media(max-width: 530px) { 
+  html {
+    font-size: 11px;
+  }
+
+  /* ------------------------ */
+
+  .header__right-side .language__select::after {
+    right: -5px;
+    top: -8px;
+  }
+
+  .content__text {
+    height: 40%;
+  }
+
+  /* -------------------- */
+
+  .software__container {
+    row-gap: 50px;
+  }
+
+  /* --------------------- */
+
+  .technology {
+    height: 90vh;
+  }
+
+  .technology__container {
+    grid-template-rows: 20% 80%;
+  }
+
+  .technology__title {
+    padding-bottom: 10px;
+  }
+
+  .technology__items, .technology__numbers {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 50px;
+  }
+
+  .technology__numbers {
+    row-gap: 50px;
+    height: 100%;
+    top: -25px;
+  }
+
+  /* ------------------------------ */
+
+  .swiper {
+    width: 250px;
+    height: auto;
+  }
+  
+  /* -------------------------------------- */
+}
+
+@media(max-width: 400px) {
+  html {
+    font-size: 9px;
+  }
+
+  .header__right-side .language__select::after {
+    right: 0;
+    top: -5px;
+  }
 }

@@ -142,7 +142,8 @@ select::-ms-expand {
 }
 
 select option {
-  background-color: mediumaquamarine;;
+  background-color: #FAFAFA;
+  color: rgba(0, 0, 0, 0.5)
 }
 
 .language__select {
@@ -213,11 +214,6 @@ button {
 
 
 /* --------------------- content section*/
-
-.main {
-  background-color: aqua;
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -294,7 +290,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 65%;
+  height: 60%;
 }
 
 
@@ -333,7 +329,7 @@ button {
   display: flex;
   align-items: center;
   position: relative;
-  width: 100%;
+  width: 90%;
   height: 100%;
 }
 
@@ -352,15 +348,13 @@ button {
   background: none;
   /* transition: all 2s linear; */
   display: block;
+  
 }
 
-.popup__button, .software__video:hover {
+
+
+.software__play-button:hover, .software__video:hover {
   cursor: pointer;
-}
-
-.popup__link img{
-  width: 50px;
-  height: 50px;
 }
 
 
@@ -416,8 +410,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   position: absolute;
-  top: 15%;
-  bottom: 0;
+  top: 25px;
   left: 0;
   right: 0;
   z-index: 99;
@@ -518,8 +511,7 @@ button {
 
 .technology__numbers {
   position: absolute;
-  top: 5%;
-  bottom: 95%;
+  top: -40px;
   left: 0;
   right: 0;
   display: grid;
@@ -531,6 +523,7 @@ button {
 
 .technology__numbers img {
   justify-self: center;
+  align-self: center;
 }
 
 /* ------------------ */
@@ -665,11 +658,14 @@ button {
 
 .form__service {
   padding: 0;
-  
   position: relative;
   display: flex; 
-  background-color: mediumaquamarine;
 }
+
+.form__service option {
+  background-color: #FAFAFA!important;
+}
+
 
 .form__service::after {
   content: url("./images/ChevronDown\(E70D\).png");
@@ -693,7 +689,7 @@ button {
 
 .contact__button {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.9rem;
   line-height: 17px;
   color: #fff;
   padding: 1rem;
