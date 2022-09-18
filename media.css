@@ -11,7 +11,7 @@
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
   .header__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -153,10 +153,16 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     /* height: auto; */
+    position: relative;
+  }
+  
+  .software__video-container {
+    position: relative;
   }
   
   .software__play-button {
-    left: 10%;  
+    left: 130px;  
+    right: 0;
   }
   .title {
     text-align: center;
@@ -164,6 +170,7 @@
   
   .software__video-container {
     margin-bottom: 20px;
+    justify-content: center;
   }
   
   /* -------------------- Technology*/
