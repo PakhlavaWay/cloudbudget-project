@@ -195,6 +195,7 @@
   
   /* -------------------- Technology*/
   
+  
   .technology__items, .technology__numbers {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -335,6 +336,7 @@
     font-size: 11px;
   }
 
+
   /* ------------------------ */
 
   .header__right-side .language__select::after {
@@ -355,7 +357,7 @@
   /* --------------------- */
 
   .technology {
-    height: 90vh;
+    height: auto;
   }
 
   .technology__container {
@@ -364,6 +366,11 @@
 
   .technology__title {
     padding-bottom: 10px;
+  }
+
+  .technology__items {
+    height: 100%;
+    margin-bottom: 50px;
   }
 
   .technology__items, .technology__numbers {
@@ -376,6 +383,10 @@
     row-gap: 50px;
     height: 100%;
     top: -25px;
+  }
+
+  .technology__items img {
+    align-self: start;
   }
 
   /* ------------------------------ */
